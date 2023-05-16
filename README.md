@@ -1,1 +1,0 @@
-# mod-gestio4Odoo
