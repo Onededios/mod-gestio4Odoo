@@ -7,4 +7,4 @@ class Dispositius(models.Model):
     nom_aula = fields.Many2one('gestiodispositius.aules', string='Nom Aula')
     id = fields.Integer(string='ID')
     tipus_dispositiu = fields.Char(string='Tipus de Dispositiu')
-    estat = fields.Char(string='Estat') 
+    estat = fields.Selection([('averiado', 'Averiado'), ('disponible', 'Disponible'), ('reparando', 'Reparando'), ('roto', 'Roto')], string='Estat') 

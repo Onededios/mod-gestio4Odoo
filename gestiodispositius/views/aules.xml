@@ -1,0 +1,57 @@
+<odoo>
+	<data>
+	<!-- Acción para la vista de Aules -->
+<record id="action_aules" model="ir.actions.act_window">
+    <field name="name">Aules</field>
+    <field name="res_model">gestiodispositius.aules</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+        <!-- Vista de árbol -->
+        <record id="view_aules_tree" model="ir.ui.view">
+            <field name="name">aules.tree</field>
+            <field name="model">gestiodispositius.aules</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nom"/>
+                    <field name="numero"/>
+                    <field name="pis"/>
+                    <field name="ordinadors_disponibles"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vista de formulario -->
+        <record id="view_aules_form" model="ir.ui.view">
+            <field name="name">aules.form</field>
+            <field name="model">gestiodispositius.aules</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="nom"/>
+                            <field name="numero"/>
+                            <field name="pis"/>
+                            <field name="ordinadors_disponibles"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Acción para la vista de árbol de Aules -->
+        <record id="action_aules_tree" model="ir.actions.act_window">
+            <field name="name">Aules</field>
+            <field name="res_model">gestiodispositius.aules</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <!-- Acción para la vista de formulario de Aules -->
+        <record id="action_aules_form" model="ir.actions.act_window">
+            <field name="name">Aules</field>
+            <field name="res_model">gestiodispositius.aules</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+</odoo>
+

@@ -1,0 +1,55 @@
+<odoo>
+	<data>
+		<!-- Acción para la vista de Tecnics -->
+<record id="action_tecnics" model="ir.actions.act_window">
+    <field name="name">Tecnics</field>
+    <field name="res_model">gestiodispositius.tecnics</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+        <!-- Vista de árbol -->
+        <record id="view_tecnics_tree" model="ir.ui.view">
+            <field name="name">tecnics.tree</field>
+            <field name="model">gestiodispositius.tecnics</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nom"/>
+                    <field name="dni"/>
+                    <field name="dispositiu_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vista de formulario -->
+        <record id="view_tecnics_form" model="ir.ui.view">
+            <field name="name">tecnics.form</field>
+            <field name="model">gestiodispositius.tecnics</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="nom"/>
+                            <field name="dni"/>
+                            <field name="dispositiu_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Acción para la vista de árbol de Tecnics -->
+        <record id="action_tecnics_tree" model="ir.actions.act_window">
+            <field name="name">Tècnics</field>
+            <field name="res_model">gestiodispositius.tecnics</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <!-- Acción para la vista de formulario de Tecnics -->
+        <record id="action_tecnics_form" model="ir.actions.act_window">
+            <field name="name">Tècnics</field>
+            <field name="res_model">gestiodispositius.tecnics</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+</odoo>
+

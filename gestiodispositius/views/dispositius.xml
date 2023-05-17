@@ -1,0 +1,57 @@
+<odoo>
+	<data>
+		<!-- Acción para la vista de Dispositius -->
+<record id="action_dispositius" model="ir.actions.act_window">
+    <field name="name">Dispositius</field>
+    <field name="res_model">gestiodispositius.dispositius</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+        <!-- Vista de árbol -->
+        <record id="view_dispositius_tree" model="ir.ui.view">
+            <field name="name">dispositius.tree</field>
+            <field name="model">gestiodispositius.dispositius</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nom_aula"/>
+                    <field name="id"/>
+                    <field name="tipus_dispositiu"/>
+                    <field name="estat"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vista de formulario -->
+        <record id="view_dispositius_form" model="ir.ui.view">
+            <field name="name">dispositius.form</field>
+            <field name="model">gestiodispositius.dispositius</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="nom_aula"/>
+                            <field name="id"/>
+                            <field name="tipus_dispositiu"/>
+                            <field name="estat"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Acción para la vista de árbol de Dispositius -->
+        <record id="action_dispositius_tree" model="ir.actions.act_window">
+            <field name="name">Dispositius</field>
+            <field name="res_model">gestiodispositius.dispositius</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <!-- Acción para la vista de formulario de Dispositius -->
+        <record id="action_dispositius_form" model="ir.actions.act_window">
+            <field name="name">Dispositius</field>
+            <field name="res_model">gestiodispositius.dispositius</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+</odoo>
+

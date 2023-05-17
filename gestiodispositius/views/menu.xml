@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <!-- Menú principal -->
+        <menuitem id="menu_gestiodispositius" name="Gestió de Dispositius" sequence="10"/>
+
+        <!-- Submenú Aules -->
+        <menuitem id="menu_aules" name="Aules" parent="menu_gestiodispositius" sequence="20"
+                  action="action_aules"/>
+
+        <!-- Submenú Dispositius -->
+        <menuitem id="menu_dispositius" name="Dispositius" parent="menu_gestiodispositius" sequence="30"
+                  action="action_dispositius"/>
+
+        <!-- Submenú Tècnics -->
+        <menuitem id="menu_tecnics" name="Tecnics" parent="menu_gestiodispositius" sequence="40"
+                  action="action_tecnics"/>
+    </data>
+</odoo>

@@ -6,5 +6,5 @@ class Aules(models.Model):
 
     nom = fields.Char(string='Nom')
     numero = fields.Integer(string='Número')
-    pis = fields.Integer(string='Pis')
+    pis = fields.Integer(string='Pis', selection=[('-1', '-1'), ('0', '0'), ('1', '1'), ('2', '2'), ('3', '3')])
     ordinadors_disponibles = fields.Boolean(string='Ordinadors Disponibles')
