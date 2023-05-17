@@ -1,23 +1,23 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "gestiodispositius",
+    'name': "Gestio de Dispositius",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Modulo de gestion de dispositivos de un centro.""",
 
     'description': """
-        Long description of module's purpose
+        El mòdul en qüestió es basa en l'organització i l'estat dels diferents dispositius que hi ha a l'institut. Es divideix en diverses taules en què primer està l'aula en què aquestes sales si tenen dispositius es gestionen de la manera següent i en el darrer cas serà els tècnics que gestiona la reparació o canvi del dispositiu. Això ens permet una organització senzilla i còmoda per als tècnics que volen veure l'estat, canviar-ho o fer les reparacions adients.
     """,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'author': "JAJA",
+    'website': "https://github.com/Onededios/mod-gestio4Odoo",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Administration',
     'version': '0.1',
+    'application': 'true',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
